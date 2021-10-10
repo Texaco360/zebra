@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+
+/*FLEXBOX CSS*/
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-row{
+    flex-direction:row;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content:center;
+}
+.justify-content-end{
+    justify-content:flex-end;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+
+.justify-content-around{
+    justify-content:space-around;
+}
+
+.justify-content-evenly{
+    justify-content:space-evenly;
+}
+.align-items-center{
+    align-items:center;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+.flex-stretch{
+    align-self:stretch ;
+}
+.w-25{
+    width:25%;
+}
+.w-35{
+    width:35%;
+}
+.w-40{
+    width:40%;
+}
+
+.w-50{
+    width:50%;
+}
+.w-75{
+    width:75%;
+}
+.w-80{
+    width:80%;
+}
+.w-100 {
+    width: 100%;
+}
+
+
+
+body{
+    width: 1280px;
+    font-family: Helvetica;
+    margin: 0 auto;
+}
+
+/*BEGIN HEADER*/
+
+#site-header{
+background-image: url('../images/Zebra-header.png');
+
+}
+
+#header-color-filter{
+    background-color: rgba(6,181,169,0.5);
+
+}
+
+/*BEGIN TOP BAR*/
+#top-bar{
+    background-color: rgba(255,255,255,0.9);
+}
+#navbar{
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 24px 0 18px 0;
+}
+
+h1 span{
+    color: rgba(6,181,169,1);
+}
+/*NAVIGATIE MENU*/
+  nav ul{
+    list-style-type: none;
+    margin: 0 0;
+    padding:0;
+}
+  nav a{
+      text-decoration: none;
+      color: black;
+  }
+  .link{
+      padding: 34px 20px;
+  }
+
+  .dropbtn{
+      padding: 34px 20px;
+      display: block;
+  }
+  .dropdown{
+      position: relative;
+  }
+
+  .link:hover{
+      background-color: #cf1a2b;
+      color:white;
+  }
+
+.dropdown:hover .dropbtn{
+      background-color: #cf1a2b;
+        color: white;
+  }
+
+/*END NAVIGATIE MENU*/
+/*BEGIN SUB-MENU MENU*/
+
+.sub-menu{
+    position: absolute;
+    display: none;
+
+}
+
+.dropdown:hover .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 290px;
+    flex-direction: column;
+    position: absolute;
+    color: #4bcaff;
+    background-color:#cf1a2b;
+
+}
+
+.dropdown:hover .sub-menu>a{
+    color: rgba(255,255,255,0.5);
+    background-color:#cf1a2b;
+    padding: 8px 20px;
+    flex-grow: 1;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+.dropdown .sub-menu a:hover{
+    color: white;
+}
+
+#sub-menu-brand{
+    margin: 0 auto;
+
+}
+#sub-menu-brand img {
+    width: 130px;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 15px 30px 18px 25px;
+    color:white;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+h2 span{
+    color:rgba(255,255,255,0.5);
+}
+
+.sub-menu img{
+    margin: 0 auto;
+    padding: 20px;
+}
+/*END SUB-MENU MENU*/
+.amount{
+    font-size: 22px;
+    color:gray;
+    padding-right: 15px;
+}
+
+/*END TOP BAR*/
+/*BEGIN HERO*/
+#herotext{
+    padding:260px 50px 180px 50px;
+}
+#centertext{
+    color:white;
+    letter-spacing: 35px;
+    text-align: left;
+}
+#centertext p{
+    margin: 0 0;
+}
+#centertext span{
+    font-family: Impact;
+    letter-spacing: 1px;
+    font-size: 116px;
+
+/*END HERO*/
+/*END HEADER*/
+
+h4 {font-family: 'Josefin Slab', serif;}
